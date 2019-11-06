@@ -10,9 +10,7 @@ public class LabArraysClass
 		
 		// fill iArray2 with 7	
                 
-                for(int i = 0; i < iArray2.length; i++){
-                    iArray2[i] = 7;
-                }
+                Arrays.fill(iArray2, 7);
 		
 		// print iArray1 and iArray2 (toString)
                 System.out.print("iArray1: ");
@@ -38,10 +36,7 @@ public class LabArraysClass
 		
 		// create iArray3 and assign it the first 3 elements of iArray1; print it
                 
-                int[] iArray3 = new int[3];
-                iArray3[0] = iArray1[0];
-                iArray3[1] = iArray1[1];
-                iArray3[2] = iArray1[2];
+                int[] iArray3 = Arrays.copyOfRange(iArray1, 0, 3);
                 
                 System.out.print("iArray3: ");
                 System.out.println(Arrays.toString(iArray3));
